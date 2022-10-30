@@ -1,0 +1,858 @@
+/* Обнуление */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body{
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    font-weight:400;
+    color:#fff;
+    font-family:Audiovide;
+    background-color:black;
+}
+.wrapper{
+    position: relative;
+    margin-top: 115px;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1160px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+/*--------------header----------------*/
+.header{
+}
+.header_body {
+    background-color: #000000;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    display:flex;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media(max-width:700px){
+    .header_body{
+        flex-direction: column;
+        padding: 15px 0;
+    }  
+} 
+.header_meta {
+    margin-right: 20px;
+}
+.menue{
+    display: flex;
+}
+.menu_list:not(:last-child){
+    margin: 0 20px 0 0;
+}
+.menu_item {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.header_links {
+    display: flex;
+}
+.link:not(last-child){
+    margin: 0 12px 0 0;
+}
+/*---------------------section1-----------------------*/
+.meta_record_container {
+    max-width: 1400px;
+}
+.meta_record_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media(max-width:1100px){
+    .meta_record_body{
+        flex-wrap: wrap;
+    } 
+}
+.meta_record_block{
+    display: flex;
+    flex-direction: column;
+}
+.meta_record_title span{
+    color: #8DFD1B;
+}
+.title {
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+.meta_record_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 110px;
+}
+@media(max-width:700px){
+    .title{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .meta_record_text{
+        margin-bottom: 50px;
+    }
+}
+.meta_record_buttom {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 60px;
+    width: 205px;
+    background: #8DFD1B;
+    border-radius: 0px;
+}
+.meta_record_buttom :hover{
+    text-decoration: underline;
+}
+.buttom {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+@media(max-width:540px){
+    .title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .meta_record_text{
+        margin-bottom: 35px;
+    }  
+}
+@media(max-width:430px){
+    .meta_record_block{
+        align-items: center;
+    }
+    .title{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .meta_record_text{
+        font-size: 11px;
+        margin-bottom: 25px;
+    }   
+}
+.meta_record_image img{
+    max-width: 100%;
+}
+/*--------------------------section2--------------------------*/
+.wave_nft_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block_left{
+    display: flex;
+    flex-direction: column;
+}
+.white{
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.title0 {
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #A8A8A8;
+    margin-bottom: 40px;
+}
+.wave_nft_image img{
+    max-width: 100%;
+}
+.block_right{
+    display: flex;
+    flex-direction: column;
+}
+.wave_nft_text_green {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    color: #8DFD1B;
+    margin: 0 0 25px 0;
+}
+.wave_nft_text1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 0 25px 0;
+}
+.wave_nft_text2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 0 25px 0;
+}
+.wave_nft_text3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0 0 45px 0;
+}
+.wave_nft_button {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 42px;
+    width: 246px;
+    border-radius: 0px;
+    border: 1px solid #8DFD1B;
+}
+.wave_nft_button :hover{
+    text-decoration: underline;
+}
+.button {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+@media(max-width:1100px){
+    .wave_nft_block{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width:700px){
+    .wave_nft_text_green{
+        font-size: 16px;
+    }
+    .wave_nft_text1{
+        font-size: 10px;
+    }
+    .wave_nft_text2{
+        font-size: 10px;
+    }
+    .wave_nft_text3{
+        font-size: 10px;
+    }
+}
+@media(max-width:400px){
+    .wave_nft_block{
+        justify-content: center;
+    }
+    .white{
+        font-size: 20px;
+    }
+    .title0 {
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    .wave_nft_text_green{
+        font-size: 11px;
+    }
+    .wave_nft_text1{
+        font-size: 8px;
+    }
+    .wave_nft_text2{
+        font-size: 8px;
+    }
+    .wave_nft_text3{
+        font-size: 8px;
+    }
+}
+/*-----------------------section3---------------------------*/
+.atists_body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+}
+.artists_title {
+    margin-bottom: 120px;
+}
+.title_artists{
+    font-family: Audiowide;
+    font-size: 79px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.column_body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.artists_column {
+    margin: 0 10px;
+}
+.item_artists_name {
+    padding: 32px 80px;
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+@media(max-width: 450px){
+    .atists_body{
+        margin-top: 40px;
+    }
+    .artists_title{
+        margin-bottom: 40px;
+    }
+    .title_artists{
+        font-size: 45px;
+    }
+    .column_body{
+        justify-content: center;
+    }   
+}
+/*-----------------section4---------------------------*/
+.MRL_body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 240px;
+}
+.title3 {
+    font-family: Audiowide;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #A8A8A8;
+    margin-bottom: 60px;
+}
+.title3 span{
+    color: #fff;
+}
+.MRL_border_body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.MRL_buttoms :hover{
+    background: #222;
+    color: #8DFD1B;
+}
+.mrl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 82px;
+    width: 282px;
+    border-radius: 0px;
+    border: #222;
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+}
+.MRL_block_text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 858px;
+    height: 538px;
+    background-color: #222;
+    border-radius: 0px;
+}
+.text_block_text1 {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    color: #8DFD1B;
+    margin-bottom: 30px;
+}
+.text_block_text2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.text_block_text2:not(:last-child){
+    margin-bottom: 18px;
+}
+.picture{
+    display: flex;
+    margin-top: 120px;
+    justify-content: center;
+}
+.picture img{
+    max-width: 100%;
+}
+
+@media(max-width: 1170px){
+    .MRL_border_body{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 900px){
+    .MRL_block_text{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width: 750px){
+    .MRL_body{
+        margin-top: 100px;
+    }
+    .text_block_image{
+        display: none;
+    }
+}
+@media(max-width: 450px){
+    .text_block_text1{
+        font-size: 18px;
+    }
+    .picture{
+        margin-top: 60px;
+    }
+}
+/*---------------------------section5---------------------------------*/
+.roadmap_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title4 {
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 120px 0 100px 0;
+}
+.card_roadmap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 140px;
+}
+.card_roadmap_body {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 539px;
+    height: 70px;
+    border-radius: 0%;
+    background: #222;
+    border: 1px solid #8DFD1B;
+}
+.card_roadmap_number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    color: #8DFD1B;
+    box-sizing: border-box;
+    width: 45px;
+    height: 45px;
+    border-radius: 0%;
+    background: #222;
+    border: 1px solid #8DFD1B;
+    margin-left: 12px;
+}
+.card_roadmap_phase {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8DFD1B;
+    margin-left: 10px;
+}
+.card_roadmap_phase span {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.card_roadmap_body2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 539px;
+    height: 200px;
+    border-radius: 0%;
+    background: #222;
+    border: 1px solid #8DFD1B;
+}
+.card_roadmap_block_text{
+    display: flex;
+    flex-direction: column;
+}
+.card_roadmap_text1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.card_roadmap_text2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.roadmap_card_image img {
+    max-width: 100%;
+}
+@media(max-width: 600px){
+    .title4{
+        margin: 80px 0 50px 0;
+    }
+    .card_roadmap{
+        margin-bottom: 80px;
+        max-width: 100%;
+    }
+    .roadmap_body {
+        max-width: 100%;
+    }
+    .card_roadmap_body{
+        max-width: 100%;
+    }
+    .card_roadmap_body2{
+        max-width: 100%;
+    }    
+}
+@media(max-width: 350px){
+    .title4{
+        margin: 50px 0 30px 0;
+    }
+    .card_roadmap {
+        margin-bottom: 40px;
+    }
+    .card_roadmap_text1{
+        margin-bottom: 10px;
+    }
+}
+/*--------------------------------section6-----------------------------*/
+.logoholder_body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logoholder_title {
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 100px 0 200px 0px;
+}
+.logoholder_block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logoholder_right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 0%;
+    background-color: #222;
+    margin: 0px 0px 0px 200px;
+}
+.lgoholder_title {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 10px 0px 26px 10px;
+}
+.logoholder_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #C4C4C4;
+    margin: 0px 10px 26px 10px;
+}
+@media(max-width: 1169px){
+    .logoholder_right{
+        margin: 0px;
+    }
+}
+@media(max-width: 970px){
+    .logoholder_title{
+        margin: 0px 0px 50px 0px;
+    }
+    .block_left{
+        margin: 0px 0px 20px 0px;
+    }
+    .logoholder_block{
+        justify-content: center;
+    }
+}
+@media(max-width: 680px){
+    .logoholder_title{
+        font-size: 60px;
+        margin: 0px 0px 35px 0px;
+    }
+}
+@media(max-width: 500px){
+    .logoholder_title{
+        font-size: 40px;
+        margin: 0px 0px 25px 0px;
+    }
+    .white{
+        font-size: 35px;
+    }
+    .title0 {
+        font-size: 35px;
+    }
+}
+@media(max-width: 330px){
+    .logoholder_title{
+        font-size: 35px;
+    }    
+    .white{
+        font-size: 30px;
+    }
+    .title0 {
+        font-size: 30px;
+    }
+}
+/*---------------------------section7-----------------------*/
+.team_title {
+    text-align: center;
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 110px 0px 200px 0px ;
+}
+.card_body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card_column {
+    display: flex;
+    flex-direction: column;
+}
+.team_name {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 19px 0px 19px 0px;
+}
+.team_position {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8DFD1B;
+    margin-bottom: 20px;
+}
+.team_social_link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social_link {
+    margin-right: 10px;
+}
+.team_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+@media(max-width: 680px){
+    .card_body{
+        justify-content: center;
+    }
+    .team_title{
+        margin: 50px 0px 80px 0px;
+    }
+}
+/*--------------------------section8--------------------------*/
+.join_body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+@media(max-width: 930px){
+    .join_body{
+        justify-content: center;
+    }
+    .meta_record_image{
+        margin-top: 15px;
+    }
+}
+@media(max-width: 530px){
+    .join_body{
+        margin-top: 50px;
+    }
+}
+/*------------------------------footer--------------------------*/
+.footer{
+    background-color: #42006A;
+}
+.footer_body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px 0px 100px 0px;
+}
+.footer_logo {
+}
+.footer_tm {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-top: 70px;
+}
+.footer_list {
+}
+.footer_item {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 29px;
+}
+.footer_links {
+}
+.footer_link {
+    margin-right: 12px;
+}
+@media(max-width: 700px){
+    .footer_body{
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+    }
+    .footer_tm{
+        margin-top: 20px;
+    }
+    .footer_list{
+        margin-top: 30px;
+    }
+}
